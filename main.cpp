@@ -144,7 +144,7 @@ void horizontalSeamCarving(Mat& img) {
 	// get start Index of last column
 	int removalIndex = 0;
 	for (int i = 1; i < img.rows; i++) {
-		if (minArr[removalIndex][img.cols-1] > minArr[removalIndex][img.cols-1])
+		if (minArr[removalIndex][img.cols-1] > minArr[i][img.cols-1])
 			removalIndex = i;
 	}
 
